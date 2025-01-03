@@ -26,7 +26,6 @@ function dateSample(sampleActivity) {
     return false;
   }
   let num = + sampleActivity;
-  console.log(sampleActivity, num);
   if (num) {
     return Math.abs(Math.floor(HALF_LIFE_PERIOD * (Math.log(num / MODERN_ACTIVITY) / Math.log(2))));
   } else {
